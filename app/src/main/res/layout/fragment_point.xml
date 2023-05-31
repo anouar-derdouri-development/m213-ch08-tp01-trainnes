@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ex06.PointFragment">
+
+    <TextView
+        android:id="@+id/tvPFPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Point"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPFLabel"
+        app:layout_constraintEnd_toStartOf="@+id/tvPFLabel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvPFLabel" />
+
+    <EditText
+        android:id="@+id/tvPFLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:maxLength="1"
+        android:text="\?"
+        android:textColor="#0000FF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvPFPoint"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPFx"
+        android:layout_width="89dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberSigned"
+        android:textColor="#0000FF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etPFy"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPFLabel" />
+
+    <EditText
+        android:id="@+id/etPFy"
+        android:layout_width="89dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberSigned"
+        android:textColor="#0000FF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etPFx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/etPFx"
+        app:layout_constraintTop_toTopOf="@+id/etPFx" />
+
+    <TextView
+        android:id="@+id/tvPFx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/etPFx"
+        app:layout_constraintEnd_toEndOf="@+id/etPFx"
+        app:layout_constraintStart_toStartOf="@+id/etPFx" />
+
+    <TextView
+        android:id="@+id/tvPFy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="y"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/etPFy"
+        app:layout_constraintEnd_toEndOf="@+id/etPFy"
+        app:layout_constraintStart_toStartOf="@+id/etPFy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
